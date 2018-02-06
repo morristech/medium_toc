@@ -1,0 +1,17 @@
+{
+  "name": "Medium Toc",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Display table of contents on medium.com articles",
+  "homepage_url": "http://github.com/ousmanedev/medium_toc",
+  "browser_action": {
+    "default_title": "Medium Toc"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://medium.com/*/*"],
+      "js": ["js/toc.js"],
+      "css":["css/toc.css"]
+    }
+  ]
+}
